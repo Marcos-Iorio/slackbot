@@ -1,0 +1,16 @@
+{
+  "name": "lund-bot",
+  "version": "1.0.0",
+  "description": "A bot for Lund Marketing with a variety of useless commands :)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Marcos Iorio",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.11.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0"
+  }
+}
