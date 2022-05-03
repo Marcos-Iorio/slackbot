@@ -36,7 +36,7 @@ setInterval(() =>{
   if(response != undefined || response != null){
     const result = app.client.chat.postMessage({
       // The token you used to initialize your app
-      channel: "C01UQUESV0B",
+      channel: "C03EB50HT4Y",
       text: '<!channel>',
       blocks: [
         {
