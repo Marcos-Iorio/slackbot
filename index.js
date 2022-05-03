@@ -60,7 +60,7 @@ app.command('/boke', async ({ command, ack, say }) => {
     // Acknowledge command request
     await ack();
     const result = await app.client.chat.postMessage({
-        channel: "C01UQUESV0B",
+        channel: "C03EB50HT4Y",
         text: `<@${command.user_name}>`,
         "blocks": [
             {
