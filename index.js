@@ -31,12 +31,15 @@ function checkBday(){
   }
 }
 
+const testBot = "C03EB50HT4Y";
+const general = "C01UQUESV0B";
+
 setInterval(() =>{
   const response = checkBday();
   if(response != undefined || response != null){
     const result = app.client.chat.postMessage({
       // The token you used to initialize your app
-      channel: "C03EB50HT4Y",
+      channel: general,
       text: '<!channel>',
       blocks: [
         {
@@ -60,7 +63,7 @@ app.command('/boke', async ({ command, ack, say }) => {
     // Acknowledge command request
     await ack();
     const result = await app.client.chat.postMessage({
-        channel: "C03EB50HT4Y",
+        channel: general,
         text: `<@${command.user_name}>`,
         "blocks": [
             {
