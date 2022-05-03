@@ -4,7 +4,7 @@
   "description": "A bot for Lund Marketing with a variety of useless commands :)",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Marcos Iorio",
   "license": "ISC",
