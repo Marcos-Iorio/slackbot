@@ -31,12 +31,12 @@ function checkBday(){
   }
 }
 
-setTimeout(() =>{
+setInterval(() =>{
   const response = checkBday();
   if(response != undefined || response != null){
     const result = app.client.chat.postMessage({
       // The token you used to initialize your app
-      channel: "C03EB50HT4Y",
+      channel: "C01UQUESV0B",
       text: '<!channel>',
       blocks: [
         {
@@ -45,13 +45,13 @@ setTimeout(() =>{
             "type": "mrkdwn",
             "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨'
               : (response.department == 'Desarrollo') ? '💻💻' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸' : '... o simplemente no labura. cof cof..☠️☠️☠️'}
-Es *${response.position} de la empresa*. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you' : ''}`
+Es *${response.position} de la empresa*. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
           }
         }
       ]
     });
   }
-}, 1000);
+}, 1000 * 60 * 60 * 24);
 
 
 app.command('/boke', async ({ command, ack, say }) => {
@@ -60,7 +60,7 @@ app.command('/boke', async ({ command, ack, say }) => {
     // Acknowledge command request
     await ack();
     const result = await app.client.chat.postMessage({
-        channel: "C03EB50HT4Y",
+        channel: "C01UQUESV0B",
         text: `<@${command.user_name}>`,
         "blocks": [
             {
