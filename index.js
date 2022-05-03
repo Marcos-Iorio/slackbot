@@ -64,7 +64,7 @@ app.command('/boke', async ({ command, ack, say }) => {
     await ack();
     const result = await app.client.chat.postMessage({
         channel: general,
-        text: `<@${command.user_name}>`,
+        text: `<@${command.user_name}> dijo UOOOOOOOCA y acá lo tenés:`,
         "blocks": [
             {
                 "type": "image",
