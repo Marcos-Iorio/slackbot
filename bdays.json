@@ -110,5 +110,19 @@
         "birthDate": "7/7/1993",
         "Puesto": "Brand Manager",
         "Departamento": "El más mejor"
+    },
+    {
+        "id": "U01UA38M6CX",
+        "name": "Gonzalo",
+        "birthDate": "16/5/1988",
+        "Puesto": "Sacarle fotos a Dani",
+        "Departamento": ""
+    },
+    {
+        "id": "",
+        "name": "Feli",
+        "birthDate": "9/8/1990",
+        "Puesto": "Assistant Regional Manager",
+        "Departamento": ""
     }
 ]

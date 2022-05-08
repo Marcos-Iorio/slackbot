@@ -37,22 +37,39 @@ const general = "C01UQUESV0B";
 setInterval(() =>{
   const response = checkBday();
   if(response != undefined || response != null){
-    const result = app.client.chat.postMessage({
-      // The token you used to initialize your app
-      channel: general,
-      text: '<!channel>',
-      blocks: [
-        {
-          "type": "section",
-          "text": {
-            "type": "mrkdwn",
-            "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨'
-              : (response.department == 'Desarrollo') ? '💻💻' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸' : '... o simplemente no labura. cof cof..☠️☠️☠️'}
-Es *${response.position} de la empresa*. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
+    if(response.name == 'U01UA38M6CX'){
+      const result = app.client.chat.postMessage({
+        // The token you used to initialize your app
+        channel: general,
+        text: '<!channel>',
+        blocks: [
+          {
+            "type": "section",
+            "text": {
+              "type": "mrkdwn",
+              "text": `<!channel>. Hoy cumple años <@${response.name}>. Feliz cumpleaños🎉🎉🎉🎉.\n BATERIST ARE YOU THERE?\n ➡️ Owned by El Pity Martinez. Last seen 🔭: 2018 ☠️⚰️☠️⚰️\n ➡️ Temas de rock escuchados este mes 0. Damas gratis y los loko maloko 1\n Moves to Austria to watch Capaldo play football ☠️☠️\n Laburar? WHAT IS THAT ❓❓\n Developer? NAO NAO, Photographer of Dani!`
+            }
           }
-        }
-      ]
-    });
+        ]
+      });
+    }else{
+      const result = app.client.chat.postMessage({
+        // The token you used to initialize your app
+        channel: general,
+        text: '<!channel>',
+        blocks: [
+          {
+            "type": "section",
+            "text": {
+              "type": "mrkdwn",
+              "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨'
+                : (response.department == 'Desarrollo') ? '💻💻' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸' : '... o simplemente no labura. cof cof..☠️☠️☠️'}
+  Es *${response.position} de la empresa*. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
+            }
+          }
+        ]
+      });
+    }
   }
 }, 1000 * 60 * 60 * 24);
 
