@@ -108,7 +108,7 @@
         "id": "U024J410JSK",
         "name": "Iván Vilaseca",
         "birthDate": "7/7/1993",
-        "Puesto": "Brand Manager",
-        "Departamento": "El más mejor"
+        "puesto": "Brand Manager",
+        "departamento": "El más mejor"
     }
 ]
