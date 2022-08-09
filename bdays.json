@@ -124,6 +124,13 @@
     "birthDate": "9/8/1990",
     "puesto": "Brand Manager",
     "departamento": "Brand"
+  },
+  {
+    "id": "U03PQAC9HHR",
+    "name": "Barbára",
+    "birthDate": "11/2/1994",
+    "puesto": "Marketing",
+    "departamento": "Pauta"
   }
   
 ]
