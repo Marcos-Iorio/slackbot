@@ -1,5 +1,6 @@
 const { App } = require('@slack/bolt')
 const dotenv = require('dotenv');
+const cron = require('node-cron');
 
 dotenv.config()
 
@@ -12,6 +13,7 @@ const app = new App({
 
 const boca = ["https://imgur.com/MW4zdiA.png", "https://imgur.com/riL4WUY.png", "https://imgur.com/Qbvaevv.png", "https://imgur.com/cJRRTgA.png", "https://imgur.com/XiM7gGc.png", "https://imgur.com/iCs5PQU.png", "https://imgur.com/PBElkZ0.png", "https://imgur.com/3frkUvM.png", "https://imgur.com/nbAuGtd.png", "https://imgur.com/aG0BPWa.png", "https://i.imgur.com/ZD4OxyN.jpg"]
 
+//Procesa un JSON, dividiendo dia/mes/año en dates para facilitar el manejo de las fechas.
 function checkBday(){
   const data = require('./bdays.json');
   const date = new Date();
@@ -34,12 +36,13 @@ function checkBday(){
 const testBot = "C03EB50HT4Y";
 const general = "C01UQUESV0B";
 
-setInterval(() =>{
+//Cron que corre todos los días a las 10:00AM ARG
+cron.schedule('00 00 10 * * *',() =>{
   const response = checkBday();
   if(response != undefined || response != null){
     const result = app.client.chat.postMessage({
       // The token you used to initialize your app
-      channel: general,
+      channel: testBot,
       text: '<!channel>',
       blocks: [
         {
@@ -47,14 +50,18 @@ setInterval(() =>{
           "text": {
             "type": "mrkdwn",
             "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨'
-              : (response.department == 'Desarrollo') ? '💻💻' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸' : '... o simplemente no labura. cof cof..☠️☠️☠️'}
-Es *${response.position} de la empresa*. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
+              : (response.department == 'Desarrollo') ? '💻💻' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸' : '... o simplemente no labura. (ñoqui) ..☠️☠️☠️'}
+              ${response.puesto !== undefined ? `Es *${response.position} de la empresa*` : ''}. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
           }
         }
       ]
     });
   }
-}, 1000 * 60 * 60 * 24);
+},
+{
+  scheduled: true,
+  timezone: "America/Argentina/Buenos_Aires"
+});
 
 
 app.command('/boke', async ({ command, ack, say }) => {
