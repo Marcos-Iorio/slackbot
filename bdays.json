@@ -1,128 +1,136 @@
 [
-    {
-        "id": "U01UVBLBG82",
-        "name": "Marcos",
-        "birthDate": "21/3/2000",
-        "puesto": "Web developer",
-        "departamento": "Desarrollo"
-    },
-    {
-        "id": "U01UA38B0QP",
-        "name": "Elu Fuino",
-        "birthDate": "22/9/1989",
-        "puesto": "Sirena",
-        "departamento": "de Océano"
-    },
-    {
-        "id": "U01UMPQMTEZ",
-        "name": "Andru",
-        "birthDate": "20/8/1989",
-        "puesto": "Social Media Manager",
-        "departamento": "Redes - Diseño"
-    },
-    {
-        "id": "U01UX1EJ2BW",
-        "name": "Lour",
-        "birthDate": "2/2/1995",
-        "puesto": "Diseñadora Gráfica",
-        "departamento": "Redes - Diseño"
-    },
-    {
-        "id": "U03AT2BDN58",
-        "name": "Maria",
-        "birthDate": "29/4/2000",
-        "puesto": "Diseñadora Grafica Jr",
-        "departamento": "Redes - Diseño"
-    },
-    {
-        "id": "U0200L64UUQ",
-        "name": "Agustin",
-        "birthDate": "14/8/1997",
-        "puesto": "Community manager",
-        "departamento": "Redes - Diseño"
-    },
-    {
-        "id": "U03CW4798TX",
-        "name": "Nicolás",
-        "birthDate": "8/1/1992",
-        "puesto": "Brand Manager Coordinator",
-        "departamento": "Brand"
-    },
-    {
-        "id": "U02J6LB7H0U",
-        "name": "Guillermina",
-        "birthDate": "11/9/1985",
-        "puesto": "Brand Manager",
-        "departamento": "Brand"
-    },
-    {
-        "id": "U021VDF7UNP",
-        "name": "Camila",
-        "birthDate": "19/11/1992",
-        "puesto": "Digital Sales Manager",
-        "departamento": "Comercial"
-    },
-    {
-        "id": "U023T3WNXH6",
-        "name": "Juli",
-        "birthDate": "22/2/1985",
-        "puesto": "Brand Manager",
-        "departamento": "Brand"
-    },
-    {
-        "id": "U028BMS4T6H",
-        "name": "Cutu",
-        "birthDate": "20/7/1998",
-        "puesto": "Business developer",
-        "departamento": "Comercial"
-    },
-    {
-        "id": "U01UX1F7SP6",
-        "name": "Her",
-        "birthDate": "24/12/1989",
-        "puesto": "COO",
-        "departamento": ""
-    },
-    {
-        "id": "U01UMQ08UDT",
-        "name": "Pau",
-        "birthDate": "10/9/1989",
-        "puesto": "Analista de Pauta Digital",
-        "departamento": ""
-    },
-    {
-        "id": "U024C6EF679",
-        "name": "Mica",
-        "birthDate": "16/1/1993",
-        "puesto": "Project Manager",
-        "departamento": "Desarrollo"
-    },
-    {
-        "id": "U0200L6B6GG",
-        "name": "Guichi",
-        "birthDate": "5/5/1991",
-        "puesto": "CEO",
-        "departamento": ""
-    },
-    {
-        "id": "U024J410JSK",
-        "name": "Iván Vilaseca",
-        "birthDate": "7/7/1993",
-        "Puesto": "Brand Manager",
-        "Departamento": "El más mejor"
-    },
-    {
-        "id": "U01UA38M6CX",
-        "name": "Gonzalo",
-        "birthDate": "16/5/1988",
-        "Puesto": "Sacarle fotos a Dani",
-        "Departamento": ""
-    },
-    {
-        "id": "",
-        "name": "Feli",
-        "birthDate": "9/8/1990",
-        "Puesto": "Assistant Regional Manager",
-        "Departamento": ""
-    }
+  {
+    "id": "U01UVBLBG82",
+    "name": "Marcos",
+    "birthDate": "21/3/2000",
+    "puesto": "Web developer",
+    "departamento": "Desarrollo"
+  },
+  {
+    "id": "U01UA38B0QP",
+    "name": "Elu Fuino",
+    "birthDate": "22/9/1989",
+    "puesto": "Sirena",
+    "departamento": "de Océano"
+  },
+  {
+    "id": "U01UMPQMTEZ",
+    "name": "Andru",
+    "birthDate": "20/8/1989",
+    "puesto": "Social Media Manager",
+    "departamento": "Redes - Diseño"
+  },
+  {
+    "id": "U01UX1EJ2BW",
+    "name": "Lour",
+    "birthDate": "2/2/1995",
+    "puesto": "Diseñadora Gráfica",
+    "departamento": "Redes - Diseño"
+  },
+  {
+    "id": "U03AT2BDN58",
+    "name": "Maria",
+    "birthDate": "29/4/2000",
+    "puesto": "Diseñadora Grafica Jr",
+    "departamento": "Redes - Diseño"
+  },
+  {
+    "id": "U0200L64UUQ",
+    "name": "Agustin",
+    "birthDate": "14/8/1997",
+    "puesto": "Community manager",
+    "departamento": "Redes - Diseño"
+  },
+  {
+    "id": "U03CW4798TX",
+    "name": "Nicolás",
+    "birthDate": "8/1/1992",
+    "puesto": "Brand Manager Coordinator",
+    "departamento": "Brand"
+  },
+  {
+    "id": "U021VDF7UNP",
+    "name": "Camila",
+    "birthDate": "19/11/1992",
+    "puesto": "Digital Sales Manager",
+    "departamento": "Comercial"
+  },
+  {
+    "id": "U023T3WNXH6",
+    "name": "Juli",
+    "birthDate": "22/2/1985",
+    "puesto": "Brand Manager",
+    "departamento": "Brand"
+  },
+  {
+    "id": "U028BMS4T6H",
+    "name": "Cutu",
+    "birthDate": "20/7/1998",
+    "puesto": "Business developer",
+    "departamento": "Comercial"
+  },
+  {
+    "id": "U01UX1F7SP6",
+    "name": "Her",
+    "birthDate": "24/12/1989",
+    "puesto": "COO",
+    "departamento": "El tester"
+  },
+  {
+    "id": "U01UMQ08UDT",
+    "name": "Pau",
+    "birthDate": "10/9/1989",
+    "puesto": "Analista de Pauta Digital",
+    "departamento": ""
+  },
+  {
+    "id": "U024C6EF679",
+    "name": "Mica",
+    "birthDate": "16/1/1993",
+    "puesto": "Project Manager",
+    "departamento": "Desarrollo"
+  },
+  {
+    "id": "U0200L6B6GG",
+    "name": "Guichi",
+    "birthDate": "5/5/1991",
+    "puesto": "CEO",
+    "departamento": ""
+  },
+  {
+    "id": "U024J410JSK",
+    "name": "Iván Vilaseca",
+    "birthDate": "7/7/1993",
+    "puesto": "Brand Manager",
+    "departamento": "El más mejor"
+  },
+  {
+    "id": "U03F9B5H0TG",
+    "name": "Coti",
+    "birthDate": "26/10/1999",
+    "puesto": "Diseñadora gráfica",
+    "departamento": "Diseño"
+  },
+  {
+    "id": "U03LN985L03",
+    "name": "Facu",
+    "birthDate": "14/1/1991",
+    "puesto": "Brand Manager",
+    "departamento": "Brand"
+  },
+  {
+    "id": "U03LN985L03",
+    "name": "Feli",
+    "birthDate": "9/8/1990",
+    "puesto": "Brand Manager",
+    "departamento": "Brand"
+  },
+  {
+    "id": "U03PQAC9HHR",
+    "name": "Bárbara",
+    "birthDate": "11/2/1994",
+    "puesto": "Marketing",
+    "departamento": "Pauta"
+  }
+  
 ]
