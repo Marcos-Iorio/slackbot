@@ -42,7 +42,7 @@ cron.schedule('00 00 10 * * *',() =>{
   if(response != undefined || response != null){
     const result = app.client.chat.postMessage({
       // The token you used to initialize your app
-      channel: testBot,
+      channel: general,
       text: '<!channel>',
       blocks: [
         {
