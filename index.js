@@ -27,7 +27,8 @@ function checkBday(){
         name: bdayBoy[0].id,
         age: date.getFullYear('YYYY') - splittedBday[2],
         position: bdayBoy[0].puesto,
-        department: bdayBoy[0].departamento
+        department: bdayBoy[0].departamento,
+        img: bdayBoy[0].img
       }
       return bday;
   }
@@ -50,9 +51,19 @@ cron.schedule('00 00 10 * * *',() =>{
           "text": {
             "type": "mrkdwn",
             "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨(Redes - diseño)'
-              : (response.department == 'Desarrollo') ? '💻💻(Los cra\')' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸(Comercial)' : '... o simplemente no labura. (ñoqui) ☠️☠️☠️'}
-              ${response.puesto !== undefined ? `Es *${response.puesto} en la empresa*` : ''}. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
+                  : (response.department == 'Desarrollo') ? '💻💻(Los cra\')' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸(Comercial)' : '... o simplemente no labura. (ñoqui) ☠️☠️☠️'}
+                  ${response.position !== undefined ? `\nEs *${response.position} en la empresa*` : ''}. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}\nDe parte todo Lund, que lo pases hermoso!`
           }
+        },
+        {
+          "type": "image",
+          "title": {
+            "type": "plain_text",
+            "text": "image1",
+            "emoji": true
+          },
+          "image_url": `${response.img !== "" ? response.img : "https://i.imgur.com/4zrESPB.jpeg"}`,
+          "alt_text": "Foto de cumpleaños"
         }
       ]
     });
