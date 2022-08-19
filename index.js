@@ -50,7 +50,7 @@ cron.schedule('00 00 10 * * *',() =>{
           "type": "section",
           "text": {
             "type": "mrkdwn",
-            "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨(Redes - diseño)'
+            "text": `<!channel>.\nHoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨(Redes - diseño)'
                   : (response.department == 'Desarrollo') ? '💻💻(Los cra\')' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸(Comercial)' : '... o simplemente no labura. (ñoqui) ☠️☠️☠️'}
                   ${response.position !== undefined ? `\nEs *${response.position} en la empresa*` : ''}. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}\nDe parte todo Lund, que lo pases hermoso!`
           }
