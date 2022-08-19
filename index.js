@@ -49,9 +49,9 @@ cron.schedule('00 00 10 * * *',() =>{
           "type": "section",
           "text": {
             "type": "mrkdwn",
-            "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨'
-              : (response.department == 'Desarrollo') ? '💻💻' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸' : '... o simplemente no labura. (ñoqui) ..☠️☠️☠️'}
-              ${response.puesto !== undefined ? `Es *${response.position} de la empresa*` : ''}. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
+            "text": `<!channel>. Hoy cumple años <@${response.name}>. Felicidades!!!🎉🎉🎉🎉. \n Para conocerlo aún más, está cumpliendo ${response.age}, labura en ${(response.department == 'Redes - Diseño') ? '🎨🎨(Redes - diseño)'
+              : (response.department == 'Desarrollo') ? '💻💻(Los cra\')' : (response.department == 'Brand') ? '🕵️🕵️(Brand)' : (response.department == 'Comercial') ? '💸💸(Comercial)' : '... o simplemente no labura. (ñoqui) ☠️☠️☠️'}
+              ${response.puesto !== undefined ? `Es *${response.puesto} en la empresa*` : ''}. ${response.name === 'U023T3WNXH6' ? '👵👵 Cuidado, gaga is behind you!!' : ''}`
           }
         }
       ]
